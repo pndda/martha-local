@@ -1,0 +1,26 @@
+// -------------BASE--------------
+@import "base/reset";
+@import "base/variables";
+@import "base/elements";
+
+ 
+
+// -------------COMPONENTS--------------
+
+// @import "components/slider";
+
+// -------------LAYOUT--------------
+@import "layout/navigation"; 
+@import "layout/footer";
+
+
+
+// -------------PAGES--------------
+@import "pages/home";
+// @import "pages/contact";
+// @import "pages/products";
+// @import "pages/about";
+// @import "pages/search";
+
+// -------------VENDORS--------------
+// @import "vendors/swiper";

@@ -1,0 +1,12 @@
+.content_fixed{
+    position: fixed;
+    top: 0;
+    padding: 50px;
+    width: 100%; 
+}
+
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
