@@ -1,12 +1,26 @@
 .content_fixed{
     position: fixed;
     top: 0;
-    padding: 50px;
     width: 100%; 
 }
-
+.content_fixed-mob{
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    // animation: showMenu 3s 1;
+    // animation-delay: 5s;
+    transition: ease-in 3s;
+}
+// @keyframes showMenu{
+//     0%   {opacity: 0;}
+//     25%  {opacity: 0;}
+//     50%  {opacity:1}
+//     100% {opacity:1}
+  
+// }
 .main-nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 50px;
 }

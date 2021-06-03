@@ -220,8 +220,15 @@ body {
 .content_fixed {
   position: fixed;
   top: 0;
-  padding: 50px;
   width: 100%;
+}
+
+.content_fixed-mob {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-transition: ease-in 3s;
+  transition: ease-in 3s;
 }
 
 .main-nav {
@@ -234,6 +241,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 50px;
 }
 
 .logo-mobile {
@@ -245,6 +253,54 @@ body {
 }
 
 h2 {
-  font-size: 300px;
+  font-size: 50px;
+}
+
+.image-overlap__container {
+  margin-top: 60px;
+}
+
+.frst-v {
+  width: 75%;
+}
+
+.first-v-right {
+  margin-left: 20%;
+  margin-top: -90px;
+}
+
+.img-big {
+  width: 100%;
+}
+
+.scnd-overlap::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.scnd-overlap {
+  margin: 40px 25px;
+}
+
+.scnd-v-left {
+  width: 38%;
+  float: left;
+}
+
+.scnd-overlap__img-left {
+  z-index: 10;
+  position: relative;
+}
+
+.scnd-overlap__img {
+  z-index: -1;
+}
+
+.scnd-v-right {
+  width: 55%;
+  float: right;
+  margin-right: 100px;
+  margin-top: -130px;
 }
 /*# sourceMappingURL=style.css.map */
