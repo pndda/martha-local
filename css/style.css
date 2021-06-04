@@ -186,6 +186,7 @@ body {
 
 h2 {
   font-size: 81px;
+  line-height: 68px;
   text-transform: uppercase;
 }
 
@@ -265,6 +266,14 @@ h2 {
   width: 100%;
 }
 
+.home-arrow {
+  font-size: 54px;
+  text-align: right;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
 .image-overlap__container {
   margin-top: 60px;
 }
@@ -311,5 +320,57 @@ h2 {
   float: right;
   margin-right: 100px;
   margin-top: -130px;
+}
+
+.img-small {
+  width: 55%;
+}
+
+.v-big {
+  margin-top: -220px;
+  margin-left: 38%;
+}
+
+.thrd-v-right {
+  margin-left: 38%;
+}
+
+.thrd-v-left {
+  margin-top: -65px;
+  margin-left: 35px;
+}
+
+.quote {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 45px auto;
+}
+
+.quote h2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.quote ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 22px;
+}
+
+.quote ul li {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .15px;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */

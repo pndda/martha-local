@@ -5,6 +5,14 @@
 .logo-desktop{
     width: 100%;
 }
+// arrow 
+.home-arrow{
+  font-size: 54px;  
+  text-align: right;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
 
 // first overlap mobile 
 .image-overlap__container{
@@ -53,4 +61,52 @@ position: relative;
     float: right;
     margin-right: 100px;
     margin-top:-130px;
+}
+
+.img-small{
+    width: 55%;
+
+}
+
+.v-big{
+    margin-top: -220px;
+    margin-left: 38%;
+}
+
+
+.thrd-v-right{
+    margin-left: 38%;
+}
+
+.thrd-v-left{
+    margin-top: -65px;
+    margin-left: 35px;
+
+}
+
+// quote 
+
+.quote{
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+    width: fit-content;
+    margin: 45px auto;
+    h2{
+        width: fit-content;
+    }
+    ul{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 22px;
+        li{
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: .15px;
+            text-transform: uppercase;
+        }
+    }
 }
