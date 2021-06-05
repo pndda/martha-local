@@ -1,0 +1,39 @@
+.mobile-fh{
+    width: 100%
+}
+
+// footer{
+//     position: fixed;
+//     bottom: 0;
+// }
+
+.fix-f
+{
+    position: fixed;
+    bottom: 0;
+}
+.header__mobile{
+    position: relative;
+    top: 0;
+}
+
+.arrow{
+    position: fixed;
+    margin: 10px;
+    z-index: 10;
+    width: fit-content;
+    a{
+  
+        text-decoration: none;
+        padding: 10px;
+        display: inline-block;
+    }
+    // a:hover{
+    //     font-size: 20px;
+      
+    // }
+}
+
+.page-content{
+    position: relative;
+}

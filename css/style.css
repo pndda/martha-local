@@ -373,4 +373,37 @@ h2 {
   letter-spacing: .15px;
   text-transform: uppercase;
 }
+
+.mobile-fh {
+  width: 100%;
+}
+
+.fix-f {
+  position: fixed;
+  bottom: 0;
+}
+
+.header__mobile {
+  position: relative;
+  top: 0;
+}
+
+.arrow {
+  position: fixed;
+  margin: 10px;
+  z-index: 10;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.arrow a {
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+.page-content {
+  position: relative;
+}
 /*# sourceMappingURL=style.css.map */
