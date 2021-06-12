@@ -711,6 +711,16 @@ h2 {
   padding: 5px 0;
 }
 
+.mainPage-footer nav ul li a {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+}
+
+.mainPage-footer nav ul li a:hover {
+  border-bottom: 1px solid white;
+  color: black;
+}
+
 @media (min-width: 768px) {
   .mainPage-footer nav {
     margin-top: 40px;
@@ -733,7 +743,7 @@ h2 {
   }
 }
 
-.mobile-fh {
+.fh {
   width: 100%;
 }
 
@@ -741,6 +751,13 @@ h2 {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+@media (min-width: 992px) {
+  .footer__pages {
+    bottom: 0;
+    width: 100%;
+  }
 }
 
 .header__pages {
@@ -765,5 +782,40 @@ h2 {
 
 .page-content {
   position: relative;
+}
+
+.page-content {
+  text-align: center;
+}
+
+.page-content .name {
+  margin: 50px 0;
+}
+
+.page-content .name h1 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.page-content .name P {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.page-content .content p {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.page-content .ft__about {
+  margin: 30px 0;
+}
+
+.page-content .ft__about nav ul li a {
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+  text-decoration: none;
+  border-bottom: 1px solid black;
 }
 /*# sourceMappingURL=style.css.map */

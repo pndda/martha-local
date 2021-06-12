@@ -1,4 +1,4 @@
-.mobile-fh{
+.fh{
     width: 100%
 }
 
@@ -12,6 +12,17 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+@media (min-width: 992px) {
+
+    .footer__pages
+    {
+        // position: unset;
+        bottom: 0;
+        width: 100%;
+    }
+
 }
 .header__pages{
     position: relative;
@@ -38,3 +49,4 @@
 .page-content{
     position: relative;
 }
+
