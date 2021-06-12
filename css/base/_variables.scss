@@ -15,18 +15,43 @@ h2{
     
 }
 
+@media (min-width: 768px) { 
+   h2{
+    font-size: 128px;
+    line-height: 120px;
+   }
+   
+}
+
 // -------------STYLES DESKTOP--------------
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
-// h1{
-//     font-family: 'outward-block';
-//     text-transform: uppercase;
-//     font-size: 85vw;
-//     line-height: 80%;
-//     margin-top: 50px;
-//     color: black;
-// }
+    h2{
+        font-size: 10rem;
+        line-height: 9rem;
+       }
+
+    br.future{
+        display: none;
+    }
+    
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 1400px) {
+    h2{
+        font-size: 14rem;
+        line-height: 12rem;
+       }
+
+}
+@media (min-width: 1700px) {
+    h2{
+        font-size: 17rem;
+        line-height: 16rem;
+       }
+
 }
 
 // -------------STRIPES FONT--------------

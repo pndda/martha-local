@@ -7,12 +7,13 @@
 //     bottom: 0;
 // }
 
-.fix-f
+.footer__pages
 {
     position: fixed;
     bottom: 0;
+    width: 100%;
 }
-.header__mobile{
+.header__pages{
     position: relative;
     top: 0;
 }

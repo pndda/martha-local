@@ -12,7 +12,24 @@
 .logo-desktop{
     display: none;
 }
-@media (min-width: 768px) {  }
+
+.img-desktop{
+    display: none;
+}
+
+.container{
+    width: 90% !important;
+    max-width: 1800px;
+}
+
+@media (min-width: 768px) {
+.img-mobile{
+    display: none;
+}
+.img-desktop{
+    display: block;
+}
+  }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
