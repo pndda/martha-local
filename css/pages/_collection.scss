@@ -10,16 +10,43 @@
 .footer__pages
 {
     position: fixed;
-    bottom: 0;
+    bottom: -3px;
     width: 100%;
 }
+.content{
+    height: 80vh;
+    // max-height: 500px;
+    // background-color: red;
+    margin: 25px 0; 
+    .swiper-container{
+    
+        width: 100%;
+        max-height: 80vh;
+        background-color: green;
+        .swiper-wrapper{
+            position: relative;
+            .swiper-slide{
+               background-size: cover;
+               background-position: center;
+            
+    
+                // img{
+                //     // height: 100%;
+                //     min-width: 100%;
+                //     object-fit: cover;
+                // }
+            }
+        }
+    }
+}
+
 
 @media (min-width: 992px) {
 
     .footer__pages
     {
-        // position: unset;
-        bottom: 0;
+        position: unset;
+        bottom: -3px;
         width: 100%;
     }
 
@@ -34,6 +61,7 @@
     margin: 10px;
     z-index: 10;
     width: fit-content;
+    top: 70px;
     a{
   
         text-decoration: none;
@@ -46,6 +74,11 @@
     // }
 }
 
+@media (min-width: 768px) {
+    .arrow{
+        top: 0;
+    }
+}
 .page-content{
     position: relative;
 }
