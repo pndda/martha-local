@@ -8,15 +8,7 @@ $(window).scroll(function () {
     }
   } else {
 
-  //   $(function(){
-  //     $(document).scroll(function(){
-  //         if($(this).scrollTop() >= $('#mainNav').offset().top - 450) {
-  //             $("#mainNav").css("background","red");
-  //         } else {
-  //             $("#mainNav").css("background","orange");
-  //         }
-  //     });
-  // });
+
 
     if ($(this).scrollTop() > 750) {
       $('#mainNav').addClass("content_fixed");
@@ -25,9 +17,4 @@ $(window).scroll(function () {
     }
   }
 
-  // if ($(this).scrollTop() > 50) {
-  //     $('#mainNav').addClass("content_fixed");
-  // } else {
-  //     $('#mainNav').removeClass("content_fixed");
-  // }
 });

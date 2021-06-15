@@ -29,6 +29,13 @@
 .img-desktop{
     display: block;
 }
+
+.logo-mobile{
+    display: none;
+}
+.logo-desktop{
+    display: block;
+}
   }
 
 // Large devices (desktops, 992px and up)
@@ -36,12 +43,7 @@
     .hide-on-mobile{
         display: block;
     }
-    .logo-mobile{
-        display: none;
-    }
-    .logo-desktop{
-        display: block;
-    }
+   
     .hide-on-desktop{
         display: none;
     }

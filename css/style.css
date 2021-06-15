@@ -263,16 +263,16 @@ h2 {
   .img-desktop {
     display: block;
   }
-}
-
-@media (min-width: 992px) {
-  .hide-on-mobile {
-    display: block;
-  }
   .logo-mobile {
     display: none;
   }
   .logo-desktop {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .hide-on-mobile {
     display: block;
   }
   .hide-on-desktop {
@@ -353,12 +353,26 @@ h2 {
   width: 100%;
 }
 
-.home-arrow {
+#arrowDown {
   font-size: 54px;
   text-align: right;
   position: fixed;
   bottom: 25px;
   right: 25px;
+  display: block;
+}
+
+#arrowTop {
+  font-size: 54px;
+  text-align: right;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+}
+
+.hero {
+  margin-top: 15px;
 }
 
 .image-overlap__container {
@@ -615,6 +629,10 @@ h2 {
           justify-content: center;
 }
 
+.add-pink {
+  margin-top: 5%;
+}
+
 @media (min-width: 768px) {
   .quote ul li {
     margin-right: 50px;
@@ -625,7 +643,7 @@ h2 {
   .quote-brave {
     position: relative;
     z-index: 40;
-    margin-top: -64%;
+    margin-top: -67%;
     float: right;
     right: 14%;
   }
@@ -708,29 +726,29 @@ h2 {
   text-transform: capitalize;
 }
 
-.mainPage-footer nav {
+.mainPage-footer .menu-footer-container {
   margin-top: 40px;
 }
 
-.mainPage-footer nav ul li {
+.mainPage-footer .menu-footer-container ul li {
   padding: 5px 0;
 }
 
-.mainPage-footer nav ul li a {
+.mainPage-footer .menu-footer-container ul li a {
   text-decoration: none;
   border-bottom: 1px solid black;
 }
 
-.mainPage-footer nav ul li a:hover {
+.mainPage-footer .menu-footer-container ul li a:hover {
   border-bottom: 1px solid white;
   color: black;
 }
 
 @media (min-width: 768px) {
-  .mainPage-footer nav {
+  .mainPage-footer .menu-footer-container {
     margin-top: 40px;
   }
-  .mainPage-footer nav ul {
+  .mainPage-footer .menu-footer-container ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -743,7 +761,7 @@ h2 {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .mainPage-footer nav ul li {
+  .mainPage-footer .menu-footer-container ul li {
     padding: 5px 0;
   }
 }
@@ -752,14 +770,8 @@ h2 {
   width: 100%;
 }
 
-.footer__pages {
-  position: fixed;
-  bottom: -3px;
-  width: 100%;
-}
-
 .content {
-  height: 80vh;
+  height: 72vh;
   margin: 25px 0;
 }
 
@@ -778,11 +790,15 @@ h2 {
   background-position: center;
 }
 
+@media (min-width: 768px) {
+  .content {
+    height: 80vh;
+  }
+}
+
 @media (min-width: 992px) {
-  .footer__pages {
-    position: unset;
-    bottom: -3px;
-    width: 100%;
+  .content {
+    height: 90vh;
   }
 }
 
@@ -798,7 +814,7 @@ h2 {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  top: 70px;
+  top: 95px;
 }
 
 .arrow a {
@@ -813,38 +829,38 @@ h2 {
   }
 }
 
-.page-content {
+.content {
   position: relative;
 }
 
-.page-content {
+.content {
   text-align: center;
 }
 
-.page-content .name {
+.content .name {
   margin: 50px 0;
 }
 
-.page-content .name h1 {
+.content .name h1 {
   font-size: 30px;
   line-height: 30px;
 }
 
-.page-content .name P {
+.content .name P {
   font-size: 20px;
   line-height: 30px;
 }
 
-.page-content .content p {
+.content .about-text {
   font-size: 16px;
   line-height: 20px;
 }
 
-.page-content .ft__about {
+.content .ft__about {
   margin: 30px 0;
 }
 
-.page-content .ft__about nav ul li a {
+.content .ft__about ul li a {
   font-size: 20px;
   line-height: 30px;
   text-transform: capitalize;
@@ -853,29 +869,41 @@ h2 {
 }
 
 @media (min-width: 768px) {
-  .page-content {
+  .content {
     text-align: center;
   }
-  .page-content .name {
+  .content .name {
     margin: 50px 0;
   }
-  .page-content .name h1 {
+  .content .name h1 {
     font-size: 100px;
     line-height: 80px;
     margin-bottom: 30px;
   }
-  .page-content .name P {
+  .content .name P {
     font-size: 20px;
     line-height: 30px;
   }
-  .page-content .content p {
+  .content .about-text {
     font-size: 20px;
     line-height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .page-content .ft__about {
+  .content .about-text div {
+    width: 90%;
+  }
+  .content .ft__about {
     margin: 30px 0;
   }
-  .page-content .ft__about nav {
+  .content .ft__about .menu-footer-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -883,7 +911,7 @@ h2 {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .page-content .ft__about nav ul {
+  .content .ft__about .menu-footer-container ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -897,10 +925,10 @@ h2 {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .page-content .ft__about nav ul li {
+  .content .ft__about .menu-footer-container ul li {
     margin-right: 30px;
   }
-  .page-content .ft__about nav ul li a {
+  .content .ft__about .menu-footer-container ul li a {
     font-size: 20px;
     line-height: 30px;
     text-transform: capitalize;
@@ -910,28 +938,42 @@ h2 {
 }
 
 @media (min-width: 992px) {
-  .page-content .name h1 {
+  .content .name h1 {
     font-size: 170px;
     line-height: 160px;
     margin-bottom: 60px;
   }
-  .page-content .name P {
+  .content .name P {
     font-size: 20px;
     line-height: 26px;
   }
-  .page-content .content p {
+  .content .about-text {
     font-size: 20px;
     line-height: 26px;
   }
-  .page-content .ft__about {
+  .content .about-text div {
+    width: 75%;
+  }
+  .content .ft__about {
     margin: 50px 0;
   }
-  .page-content .ft__about nav ul li a {
+  .content .ft__about .menu-footer-container ul li a {
     font-size: 20px;
     line-height: 26px;
     text-transform: capitalize;
     text-decoration: none;
     border-bottom: 1px solid black;
   }
+}
+
+.wrapThis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */

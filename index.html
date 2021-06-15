@@ -12,50 +12,30 @@
 </head>
 
 <body>
-
-    <!-- <header>
-        <div class="main-navigation">
-            <ul class="main-nav">
-                <li>
-                    <a href="">collection</a>
-                </li>
-                <li>
-                    <a href="">marc martha</a>
-                </li>
-            </ul>
-        </div>
-    </header> -->
     <section class="hero">
         <div class="container">
-            <img src="/assets/img/martha-logo-desktop.svg" alt="" class="logo-desktop">
-            <img src="/assets/img/martha-logo-mobile.svg" alt="" class="logo-mobile mobile-header">
+            <img src="/assets/img/martha-logo-desktop.svg" alt="" class="logo-desktop rellax" data-rellax-speed="-7">
+            <img src="/assets/img/martha-logo-mobile.svg" alt="" class="logo-mobile mobile-header rellax"
+                data-rellax-speed="-7">
         </div>
     </section>
-    <div class="home-arrow hide-on-mobile">
-        <!-- <img src="" alt=""> -->
+    <div id="arrowDown" class="home-arrow hide-on-mobile">
 
         ↓
     </div>
-    <header id="mainNav">
-        <div class="container">
-            <ul class="main-nav">
-                <li>
-                    <a href="collection.html">collection</a>
-                </li>
-                <li>
-                    <a href="about.html">marc martha</a>
-                </li>
-            </ul>
-        </div>
-    </header>
-    <section class="image-overlap">
+    <div id="arrowTop" class="top-arrow hide-on-mobile">
+        ↑
+    </div>
+
+    <section class="image-overlap rellax" data-rellax-speed="2">
         <div class="container">
             <div class="image-overlap__container">
-                <img src="/assets/img/MARTHA_Oona_10-min.png" alt="" class="frst-v first-v-left">
+                <img src="/assets/img/MARTHA_Oona_10-min.png" alt="" class="frst-v first-v-left ">
                 <img src="/assets/img/MARTHA_Oona_02-min.png" alt="" class="frst-v first-v-right frst-v-max">
             </div>
         </div>
     </section>
+
     <section>
         <div class="container">
             <div class="quote quote-imagine">
@@ -70,9 +50,21 @@
         </div>
 
     </section>
+    <header id="mainNav">
+        <div class="container">
+            <ul class="main-nav">
+                <li>
+                    <a href="collection.html">collection</a>
+                </li>
+                <li>
+                    <a href="about.html">marc martha</a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <section class="image-overlap-big">
         <img src="/assets/img/MARTHA_Oona_35.png" alt="" class="img-big img-mobile">
-    
+
         <div class="container scnd-overlap">
             <div class="scnd-overlap-big">
                 <img src="/assets/img/MARTHA_Oona_35.png" alt="" class="img-big img-desktop">
@@ -92,7 +84,7 @@
                 <h2>A brave <br> new <br> world</h2>
             </div>
         </div>
-       
+
         <img src="/assets/img/MARTHA_Oona_18-min.png" alt="" class="img-big img-mobile">
 
         <div class="container ">
@@ -127,7 +119,6 @@
         <div class="mainPage-footer container">
             <h4>marc martha</h4>
             <p>By Marc Pengel</p>
-
             <nav>
                 <ul>
                     <li>
@@ -170,6 +161,9 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="/assets/js/nav.js"></script>
+    <script>
+        var rellax = new Rellax('.rellax');
+    </script>
 </body>
 
 </html>

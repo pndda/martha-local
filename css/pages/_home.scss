@@ -12,12 +12,26 @@
 }
 
 // arrow 
-.home-arrow {
+#arrowDown {
     font-size: 54px;
     text-align: right;
     position: fixed;
     bottom: 25px;
     right: 25px;
+    display: block;
+}
+#arrowTop {
+    font-size: 54px;
+    text-align: right;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    
+}
+// hero 
+.hero{
+    margin-top: 15px;
 }
 
 // first overlap mobile 
@@ -305,6 +319,10 @@
     justify-content: center;
 }
 
+.add-pink {
+   margin-top: 5%;
+}
+
 @media (min-width: 768px) {
     .quote ul li{
         margin-right: 50px;
@@ -316,7 +334,7 @@
     .quote-brave {
         position: relative;
         z-index: 40;
-        margin-top: -64%;
+        margin-top: -67%;
         float: right;
         right: 14%;
         // h2{
@@ -414,7 +432,7 @@
         text-transform: capitalize;
     }
 
-    nav {
+    .menu-footer-container {
         margin-top: 40px;
 
         ul li {
@@ -450,7 +468,7 @@
         //     text-transform: capitalize;
         // }
 
-        nav {
+        .menu-footer-container {
             margin-top: 40px;
 
             ul {

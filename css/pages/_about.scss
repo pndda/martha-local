@@ -1,4 +1,4 @@
-.page-content {
+.content {
     text-align: center;
 
     .name {
@@ -17,7 +17,7 @@
     }
 
 
-    .content p {
+    .about-text {
         font-size: 16px;
         line-height: 20px;
     }
@@ -25,7 +25,7 @@
     .ft__about {
         margin: 30px 0;
 
-        nav ul li a {
+     ul li a {
             font-size: 20px;
             line-height: 30px;
             text-transform: capitalize;
@@ -36,7 +36,7 @@
 }
 
 @media (min-width: 768px) {
-    .page-content {
+    .content {
         text-align: center;
     
         .name {
@@ -56,15 +56,21 @@
         }
     
     
-        .content p {
+        .about-text {
             font-size: 20px;
             line-height: 30px;
+            display: flex; 
+            justify-content: center;
+            align-items: center;
+            div{
+                width: 90%;
+            }
         }
     
         .ft__about {
             margin: 30px 0;
     
-            nav {
+            .menu-footer-container {
                 display: flex;
                 justify-content: center;
                 ul {
@@ -90,7 +96,7 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-.page-content{
+.content{
     .name{
         h1{
             font-size: 170px;
@@ -104,15 +110,18 @@
     }
 //
 
-    .content p {
+    .about-text {
         font-size: 20px;
         line-height: 26px;
+        div{
+            width: 75%;
+        }
     }
 
     .ft__about {
         margin: 50px 0;
 
-        nav ul li a {
+        .menu-footer-container ul li a {
             font-size: 20px;
             line-height: 26px;
             text-transform: capitalize;
@@ -125,3 +134,10 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 1400px) {}
+
+
+.wrapThis{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
